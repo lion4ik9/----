@@ -18,3 +18,8 @@
 body {
     background-color: cornflowerblue;
 }
+
+.box {
+    width: 350px;
+    height: 350px;
+}
