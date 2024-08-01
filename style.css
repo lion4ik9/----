@@ -19,6 +19,12 @@ body {
     background-color: cornflowerblue;
 }
 
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .box {
     width: 350px;
     height: 350px;
