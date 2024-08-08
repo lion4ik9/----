@@ -1,17 +1,50 @@
+@font-face {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    src: url('fonts/BebasNeue-Regular.ttf');
+  }
+
 .true {
+    width: 190px;
     font-size: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Babes Neue', sans-serif;
     color: white; 
-    animation: true 3s ease-in infinite both;
+    animation: true 3s linear infinite both;
 }
 
 @keyframes true {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    33% {
+        transform: rotate(90deg) scale(1.5);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    66% {
+        transform: rotate(230deg) scale(1.5);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.true:hover {
+    animation: true-hover 250ms infinite linear both;
+}
+
+@keyframes true-hover {
     0% {
         transform: rotate(0deg);
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 }
 
@@ -19,13 +52,22 @@ body {
     background-color: cornflowerblue;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
+    box-sizing: content-box;
     width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
 .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 350px;
     height: 350px;
 }
