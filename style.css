@@ -11,7 +11,7 @@
   }
   
 
-.true {
+.box .true {
     width: 190px;
     font-size: 40px;
     font-family: 'Babes Neue', sans-serif;
@@ -50,18 +50,11 @@
     }
 }
 
-.true:hover {
-    animation: true-hover 250ms ease both;
-}
-
-@keyframes true-hover {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(-360deg);
-    }
+.box:hover .true {
+    animation: none;
+    transition: transform 0.5s ease;
+   transform: rotate(0deg);
+   
 }
 
 body {
@@ -94,6 +87,7 @@ header {
 }
 
 .btn-modal-main {
+    height: 100px;
     border: none;
     animation: btn-modal-main 110ms ease-in both;
 }
@@ -138,9 +132,7 @@ header {
     }
 }
 
-.btn-modal-main:focus {
-    animation: ;
-}
+
 
 @keyframes btn-modal-main-focus {
 
@@ -266,4 +258,10 @@ form {
     100% {
         opacity: 1;
     }
+}
+
+.cube-side {
+    width: 250px;
+    height: 250px;
+
 }
